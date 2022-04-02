@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Homepage</title>
+    <style>
+        h1{text-align:center;
+     color:red;
+      top:+12px;}
+      div.a{
+          background-color:grey;
+          text-align:center;
+          padding:14px 16 px;
+          font-size:25px;
+      }
+    </style>
+ </head>
+<body>
+    <img src="nmit.jpeg" alt="img unavailable" width="100" height="120"> 
+    <img src="index.jpeg" align="right" width="180" height="200">
+    <h1>Ise Club</h1>
+    <form action="/register.html" method="get">
+        Name:<input type="text" value=""><br><br>
+        Gender:<input type="radio" name="gender" checked="" value="Male">Male
+        <input type="radio" name="gender" checked="" value="Female">Female<br><br>
+        DOB:<input type="date"><br><br>
+        Phone:<input type="number"><br><br>
+        Email:<input type="mail"><br><br>
+        Designation:<label for="designation">choose a option:</label>
+        <select id="designation" name="designation">
+            <option value="head of department">Head of Dept</option>
+            <option value="professor">Professor</option>
+            <option value="asst professor">Asst Professor</option>
+        </select>
+        <br><br>
+        Blood Group:<label for="bloodgroup">choose a option:</label>
+        <select id="bloodgroup" name="bloodgroup">
+            <option value="A +ve">A+ve</option>
+            <option value="A-ve">A-ve</option>
+            <option value="B+ve">B+ve</option>
+            <option value="B-ve">B-ve</option>
+            <option value="O+ve">O+ve</option>
+            <option value="O-ve">O-ve</option>
+        </select>
+        <br><br>
+        Reason To Join:<textarea></textarea><br><br>
+        References:<input type="text" value=""><br><br>
+        Address:<input type="text" value=""><br><br>
+        Hobbies:<textarea></textarea><br><br>
+        Area Of Interest:<label for="areaofinterest">choose a option:</label>
+        <select id="areaofinterest" name="areaofinterest">
+            <option value="Machine Learning">Machine Learning</option>
+            <option value="Artifial Intelligence">Artifial Intelligence</option>
+            <option value="Block Chain">Block Chain</option>
+        </select>
+        <br><br>
+        <button type="submit">SUBMIT</button>
+        <button type="reset">RESET</button>
+    </form>
+
+</body>
+</html>
