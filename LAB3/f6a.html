@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const caps=(str)=>{ 
+let str1=str.charAt(0).toUpperCase(); 
+let str2=str.slice(1); 
+return str1+str2; 
+} 
+let str=prompt(); 
+let ans="",tmp=""; 
+for(let i=0;i<str.length;i++) 
+{ 
+if(str[i]!==' ') 
+tmp+=str[i]; 
+if(str[i]===' ' || i===str.length-1) 
+{ 
+ans+=" "+caps(tmp); 
+tmp=""; 
+} 
+} 
+console.log(ans); 
+
+    </script>
+</body>
+</html>

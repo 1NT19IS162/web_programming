@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        we=(n)=>{
+            if(n>150){
+                return "Obese";
+            }
+            if(n>=100 && n<=150){
+                return "Ok";
+            }
+            if(n<100){
+                return "Underweight";
+            }
+        }
+        let n=prompt("enter a value");
+        n=n*2.2;
+        let res=we(n);
+        alert(res);
+    </script>
+</body>
+</html>
