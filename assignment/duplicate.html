@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getUnique(arr4){
+  let uniqueArr = [];
+
+  for(let i of arr4) {
+      if(uniqueArr.indexOf(i) === -1) {
+          uniqueArr.push(i);
+      }
+  }
+  console.log(uniqueArr);
+}
+const array = [1, 2, 3, 2, 3];
+// calling the function
+getUnique(array);
+    </script>
+</body>
+</html>

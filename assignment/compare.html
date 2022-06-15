@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isequal()
+{
+    let arr1 = [1,1,1,1,7];
+    let arr2 = [1,1,1,1,7];
+    if(arr1.length!=arr2.length)
+    {
+        return false;
+    }
+    //comparison for each element in an array
+    for(let i=0;i<arr1.length;i++)
+    {
+        if(arr1[i]!=arr2[i])
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+
+}
+let result = isequal();
+console.log(result);
+    </script>
+</body>
+</html>

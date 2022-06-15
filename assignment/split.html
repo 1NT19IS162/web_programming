@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun(arr3, size) {
+    const res = [];
+    for (let i = 0; i < arr3.length; i += size) {
+        const split = arr3.slice(i, i + size);
+        res.push(split);
+    }
+    return res;
+}
+const arr3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(fun(arr3, 3));
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a1=[1, 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 'a'];
+let max_count = 1;
+let count = 0;
+let item;
+for (let i=0; i<a1.length; i++)
+{
+        for (let j=i; j<a1.length; j++)
+        {
+                if (a1[i] == a1[j])
+                 count++;
+                if (count>max_count)
+                {
+                  max_count=count;
+                  item = a1[i];
+                }
+        }
+        count=0;
+}
+console.log(item+" ( " +max_count +" times ) ") ;
+    </script>
+</body>
+</html>
