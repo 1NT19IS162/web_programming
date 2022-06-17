@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function NameSplit(name){
+            var string=name.split(" ");
+            var i=0,m;
+            var slength=string.length;
+            while(i<(slength-1)){
+                m=string[i].split("");
+                document.write(m[0]+". ");
+                i=i+1;
+            }
+            document.write(string[slength-1]);
+        }
+        var Name=prompt("enter name");
+        NameSplit(Name);
+    </script>
+</body>
+</html>
